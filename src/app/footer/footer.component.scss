@@ -1,3 +1,10 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
+}
+
 .github-footer {
   padding: 24px 16px;
   font-size: 12px;

@@ -6,7 +6,7 @@ import { ProfileSidebarComponent } from './profile-sidebar/profile-sidebar.compo
 import { FooterComponent } from './footer/footer.component';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, ProfileSidebarComponent, ProfileContentComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
