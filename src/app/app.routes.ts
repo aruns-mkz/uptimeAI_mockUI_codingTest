@@ -34,5 +34,8 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./stars/stars.component')
         .then(m => m.StarsComponent)
+  },
+  {
+    path:'**', redirectTo:'overview', pathMatch: 'full'
   }
 ];
