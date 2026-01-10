@@ -1,0 +1,34 @@
+<!-- contribution-activity.component.html -->
+
+<div class="contribution-activity">
+  <h3>Contribution activity</h3>
+  
+  <div class="month">{{ month }}</div>
+
+  <div class="activity-item">
+    <div class="icon">&#128221;</div>
+    <div class="content">
+      <strong>Created {{ commitsCount }} commits in {{ commitsRepos }} repositories</strong>
+    </div>
+  </div>
+
+  <div class="activity-item">
+    <div class="icon">&#128295;</div>
+    <div class="content">
+      <strong>Opened {{ pullRequestsCount }} pull requests in {{ pullRequestsReposCount }} repositories</strong>
+      <ul class="pr-list">
+        <li *ngFor="let pr of pullRequests">
+          <span class="repo-name">{{ pr.repo }}</span>
+          <span class="pr-status merged">{{ pr.merged }} merged</span>
+          <span *ngIf="pr.open > 0" class="pr-status open">{{ pr.open }} open</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <button class="show-more-btn">Show more activity</button>
+
+  <div class="footer-note">
+    Seeing something unexpected? Take a look at the <a href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/managing-contribution-graphs-on-your-profile" target="_blank" rel="noopener noreferrer">GitHub profile guide</a>.
+  </div>
+</div>

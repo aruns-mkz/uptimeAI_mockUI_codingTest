@@ -1,0 +1,42 @@
+// .tabs {
+//   display: flex;
+//   gap: 16px;
+//   border-bottom: 1px solid #d0d7de;
+//   margin-bottom: 16px;
+//   flex-wrap: wrap;
+// }
+
+// .tabs a {
+//   padding: 12px;
+//   cursor: pointer;
+//   color: #24292f;
+// }
+
+// .active {
+//   border-bottom: 2px solid #fd8c73;
+//   font-weight: 600;
+// }
+
+/* Default underline color */
+.nav-underline .nav-link {
+  color: black; /* text color */
+  border-bottom: 3px solid transparent; /* keep text black */
+  transition: border-color 0.3s;
+}
+
+/* Hover underline color */
+.nav-underline .nav-link:hover {
+  border-bottom-color: orange; /* underline only */
+  color: black; /* text stays black */
+}
+
+/* Active link underline color */
+.nav-underline .nav-link.active,
+.nav-underline .nav-link[aria-current="page"] {
+  border-bottom-color: orange; /* underline only */
+  color: black; /* text stays black */
+}
+
+.tabbg {
+    background-color: #f6f8fa;
+}

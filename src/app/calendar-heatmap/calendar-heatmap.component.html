@@ -1,0 +1,13 @@
+<div class="calendar-wrapper">
+  <div class="controls" *ngIf="years?.length">
+    <label>
+      Year:
+<select (change)="changeYear($any($event.target).value)">
+           <option *ngFor="let y of years" [value]="y">{{ y }}</option>
+      </select>
+    </label>
+  </div>
+
+  <div #chart class="chart" style="width: 100%; height: 200px;"></div>
+</div>
+

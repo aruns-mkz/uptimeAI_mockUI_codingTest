@@ -1,0 +1,50 @@
+<div class="profile" *ngIf="profileData != null">
+  <img src={{profileData?.avatar_url}} />
+  <h5>{{profileData?.name}}</h5>
+  <p class="username">&#64;{{profileData?.login}}</p>
+<p class="bio">{{profileData?.bio}}</p>
+  <button class="btn border fw-bold">Edit Profile</button>
+
+  <ul class="meta">
+    <li>👥 {{profileData?.followers}} <span style="color: gray;">followers</span> · {{profileData?.following}} <span style="color: gray;">following</span></li>
+    <li><span *ngIf="profileData?.company != null">🏢 {{profileData?.company}}</span></li>
+    <li><span *ngIf="profileData?.location != null">📍 {{profileData?.location}}</span></li>
+    <li><span *ngIf="profileData?.email != null">✉️ {{profileData?.email}}</span></li>
+     <!-- Blog -->
+  <li>
+    <span *ngIf="profileData?.blog != null">📝 
+      <a href={{profileData?.blog}} target="_blank" rel="noopener noreferrer">
+        {{profileData?.blog}}
+      </a>
+    </span>
+  </li>
+  <li>
+    <span *ngIf="profileData?.twitter_username != null">🐦 
+      <a href="https://twitter.com/{{profileData?.twitter_username}}" target="_blank" rel="noopener noreferrer">
+        &#64;{{profileData?.twitter_username}}
+      </a>
+    </span>
+  </li>
+  </ul>
+</div>
+<div class="acheivement">
+<span class="fw-bold">Acheivement</span>
+<div class="acheivement-img mt-2">
+    <img src="https://media.istockphoto.com/id/1140803225/vector/new-possibilities-hope-overcome-business-problems-solution-finding-vector-concept.jpg?s=1024x1024&w=is&k=20&c=wdY8U5SWlqaXA88bPsDtAc4qtE79IhHvJOstVh7x8ts="/>
+   <img src="https://media.istockphoto.com/id/1551272692/vector/a-man-walks-through-a-shiny-keyhole-door-to-reach-a-bright-star-on-a-purple-background.jpg?s=612x612&w=0&k=20&c=fKrWUYq_Euvh5bhvFqxGSJ2u2YheyujxXIv2fB7wbKE=" />
+   <img src="https://media.istockphoto.com/id/2149866124/photo/man-on-top-of-a-staircase.jpg?s=612x612&w=0&k=20&c=UK5KNEqEA149Zo9FAmGBMEm9kndLNg7K1Pej8korVGQ="/>
+
+</div>
+</div>
+
+<div class="organization">
+<span class="fw-bold">organization</span>
+<div class="organization-img mt-2">
+    <img src="https://media.istockphoto.com/id/1145854439/photo/businessman-looking-at-a-cityscape.jpg?s=612x612&w=0&k=20&c=lAJh5o9OqTSYseTcbHwqyTuK9ODOD-G76NEnpcVAfmU="/>
+   
+</div>
+</div>
+
+
+
+

@@ -1,0 +1,29 @@
+/* calendar-heatmap.component.css */
+.calendar-wrapper {
+  width: 100%;
+}
+
+.controls {
+  margin-bottom: 12px;
+      display: grid;
+    justify-content: start;
+}
+
+.chart {
+  width: 100%;
+  height: 280px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .chart {
+    height: 350px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .chart {
+    height: 420px;
+  }
+}

@@ -1,0 +1,124 @@
+.header {
+  height: 56px;
+  background: #f6f8fa;
+ display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  color: #f6f8fa;
+;
+}
+
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  font-size: 20px;
+}
+
+input {
+  background: #e9f1f9;
+  border: none;
+  padding: 6px 10px;
+  color: white;
+  border-radius: 6px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+}
+
+.search-box {
+  position: relative;
+}
+
+/* Style the input */
+.search-box input {
+  width: 250px; /* initial width */
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: width 0.3s ease; /* smooth animation */
+}
+
+/* Expand input on focus */
+.search-box input:focus {
+  width: 450px; /* final width */
+  outline: none;
+}
+
+/* Optional: keep right edge fixed */
+.search-box {
+  display: flex;
+  justify-content: flex-end; /* right-align inside container */
+}
+
+.avatar {
+  border-radius: 50%;
+  width:35px;
+}
+
+.github-logo {
+  vertical-align: middle;
+  margin-right: 8px;
+  color: #24292f; /* GitHub black */
+}
+
+.list-group-item:hover {
+  background-color: #edebe5; /* any color you want */
+  color: #000; /* optional, text color */
+  cursor: pointer; /* makes it feel clickable */
+}
+.list-group-item{
+    border: none;
+}
+
+.tab{
+      border-bottom: 1px solid #d1d9e0b3;
+
+}
+
+.search-box{
+         border: 1px solid #d1d9e0b3;
+
+ 
+}
+.chat-copliot .dropdown .btn {
+    background-color: #f6f8fa;
+     border: 1px solid #d1d9e0b3;
+}
+
+.chat-copliot .dropdown-toggle {
+    color: black;
+}
+
+.create-new .dropdown .btn {
+    background-color: #f6f8fa;
+     border: 1px solid #d1d9e0b3;
+}
+
+.create-new .dropdown-toggle {
+    color: black;
+}
+.right-pullrequest{
+color:#000;
+  border: 1px solid #d1d9e0b3;
+  border-radius: 7px;
+}
+.right-issues{
+color: #000;
+  border: 1px solid #d1d9e0b3;
+   border-radius: 7px;
+}
+.right-notification{
+    color: #000;
+  border: 1px solid #d1d9e0b3;
+   border-radius: 7px;
+}
