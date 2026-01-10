@@ -13,7 +13,6 @@ export class UsersService {
     return this.http.get('https://api.github.com/users/shreeramk')
   }
     getUsersReposDetails(): Observable<any> {
-// Headers will be sent here
     return this.http.get("https://api.github.com/users/shreeramk/repos");
   }
 }

@@ -1,7 +1,7 @@
 /* Container for all repo cards */
 .repo-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Single column by default */
+  grid-template-columns: 1fr 1fr; 
   gap: 16px;
   padding: 16px;
 }
@@ -9,11 +9,10 @@
 /* Two columns on larger screens */
 @media (min-width: 768px) {
   .repo-container {
-    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-template-columns: 1fr 1fr; 
   }
 }
 
-/* Existing card styles remain the same */
 .repo-card {
   background-color: #ffffff;
   border: 1px solid #e1e4e8;
@@ -33,7 +32,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-//   margin-bottom: 8px;
 }
 
 .repo-name a {

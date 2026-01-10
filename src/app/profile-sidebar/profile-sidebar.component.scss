@@ -3,7 +3,7 @@
   border-bottom: 1px solid #d0d7de;
   padding: 16px;
   border-radius: 6px;
-  text-align: left;   /* ✅ force left alignment */
+  text-align: left;   
 }
 
 
@@ -13,7 +13,7 @@
   border-radius: 50%;
   object-fit: cover;
   display: block;
-  margin: 0 auto 12px auto; /* center avatar only */
+  margin: 0 auto 12px auto; 
 }
 
 .username {
@@ -64,10 +64,10 @@ button {
 }
 
 .acheivement-img img {
-  width: 45px;        /* same width & height */
+  width: 45px;        
   height: 45px;
   border-radius: 50%;
-  object-fit: cover; /* prevents image stretching */
+  object-fit: cover; 
 }
 .organization{
     padding: 5px;
@@ -80,8 +80,8 @@ button {
     gap: 10px;
 }
 .organization-img img {
-     width: 45px;        /* same width & height */
+     width: 45px;        
   height: 45px;
   border-radius: 50%;
-  object-fit: cover; /* prevents image stretching */
+  object-fit: cover;
 }

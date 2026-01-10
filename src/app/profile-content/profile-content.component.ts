@@ -16,7 +16,6 @@ userRepoData: any;
 ngOnInit(): void {
   this.userRepoData = this.userDetails.getUsersReposDetails().subscribe(res => {
     this.userRepoData = res;
-    console.log(this.userRepoData);
   });
 }
 }
