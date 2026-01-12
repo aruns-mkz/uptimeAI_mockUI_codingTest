@@ -1,13 +1,13 @@
 .header {
   height: 56px;
   background: #f6f8fa;
- display: flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 16px;
-  color: #f6f8fa;
-;
+  flex-wrap: nowrap; /* desktop */
 }
+
 
 
 .left {
@@ -39,25 +39,21 @@ input {
   position: relative;
 }
 
-/* Style the input */
 .search-box input {
-  width: 250px; /* initial width */
-  padding: 6px 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  transition: width 0.3s ease; /* smooth animation */
+  width: 200px;
+  max-width: 100%;
+  transition: width 0.3s ease;
 }
 
-/* Expand input on focus */
 .search-box input:focus {
-  width: 450px; /* final width */
-  outline: none;
+  width: 300px;
 }
+
 
 /* Optional: keep right edge fixed */
 .search-box {
   display: flex;
-  justify-content: flex-end; /* right-align inside container */
+  justify-content: flex-end; 
 }
 
 .avatar {
@@ -122,3 +118,53 @@ color: #000;
   border: 1px solid #d1d9e0b3;
    border-radius: 7px;
 }
+
+@media (max-width: 768px) {
+
+  .header {
+    height: auto;               
+    padding: 8px;
+    align-items: flex-start;    
+  }
+
+  /* LEFT stays in first row */
+  .left {
+    flex: 1;
+    gap: 8px;
+  }
+
+  /* RIGHT breaks into two rows */
+  .right {
+    display: flex;
+    flex-wrap: wrap;           
+    justify-content: flex-start;
+    gap: 8px;
+    max-width: 100%;
+  }
+
+  /* Force row break after search */
+  .search-box {
+    width: 100%;
+    order: 1;                   /* first row */
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+
+  /* Icons go to second row */
+  .chat-copliot,
+  .create-new,
+  .right-pullrequest,
+  .right-issues,
+  .right-notification,
+  .avatar {
+    order: 2;
+  }
+
+  .avatar {
+    width: 32px;
+    height: 32px;
+  }
+}
+
